@@ -1,0 +1,343 @@
+@import "normalize";
+@import "layout";
+@import "elements";
+$white: #fff;
+$grey: #bbbbbb;
+$blue: #5474fd;
+body {
+}
+
+/* Layout */
+.ba-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1110px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+.ba-intro {
+	background: #fff url(../img/mountains.png) no-repeat center;
+	padding-top: 108px;
+	background-size: cover;
+	padding-bottom: 124px;
+}
+.ba-title {
+	font-size: 53px;
+	font-weight: 600;
+	font-family: "Josefin Sans", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+	margin-bottom: 20px;
+}
+.ba-text {
+	font-size: 21px;
+	font-weight: 400;
+	font-family: "Josefin Sans", sans-serif;
+	text-align: center;
+	color: $white;
+	margin-bottom: 50px;
+	letter-spacing: 0.3em;
+}
+.ba-search {
+	max-height: 51px;
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 115px;
+
+	border: 2px $white solid;
+	max-width: 650px;
+	.ba-input-text {
+		padding: 20px;
+		border: none;
+		display: flex;
+		flex-grow: 1;
+		&::placeholder {
+			font-size: 13px;
+			font-family: "Josefin Sans", sans-serif;
+			font-weight: 400;
+			color: $grey;
+			text-align: center;
+			letter-spacing: 0.3em;
+		}
+	}
+	.ba-button {
+		max-width: 147px;
+		background: $blue;
+		border: 1px solid $blue;
+		text-transform: uppercase;
+		color: $white;
+		font-size: 11px;
+		font-family: "Aleo", serif;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+
+		svg {
+			fill: currentColor;
+		}
+	}
+}
+.ba-serch-wrap {
+	display: inline-block;
+	justify-content: center;
+	padding-right: 5px;
+}
+.ba-scroll-wrap {
+	display: block;
+	.ba-scroll {
+		font-size: 11px;
+		font-family: "Josefin Sans", sans-serif;
+		font-weight: 400;
+		color: $white;
+		text-align: center;
+		letter-spacing: 0.8em;
+		margin-bottom: 15px;
+	}
+	.ba-arrow {
+		display: flex;
+		margin: 0 auto;
+	}
+}
+.ba-nav {
+	background-color: $blue;
+}
+.ba-header {
+	padding-top: 25px;
+	background-color: $blue;
+	padding-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
+	.ba-logo {
+		font-size: 20px;
+		font-family: "Josefin Sans", sans-serif;
+		font-weight: 700;
+		color: $white;
+		text-transform: uppercase;
+	}
+	.ba-menu {
+		display: list-item;
+		margin: 0;
+		list-style: none;
+		ul {
+			display: flex;
+			margin: 0;
+			list-style: none;
+			li {
+				a {
+					// display: list-item;
+					text-decoration: none;
+					padding-left: 44px;
+					font-size: 11px;
+					font-family: "Aleo", serif;
+					font-weight: 400;
+					color: $white;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+				}
+			}
+		}
+	}
+}
+.ba-us {
+	background: #fff url(../img/town.png) no-repeat center;
+	padding-top: 108px;
+	padding-bottom: 113px;
+	background-size: cover;
+}
+
+.ba-title-us {
+	padding-top: 72px;
+	font-size: 33px;
+	font-weight: 400;
+	font-family: "Aleo", serif;
+	// text-align: center;
+	color: $white;
+	margin-bottom: 60px;
+}
+.ba-paragraph {
+	font-size: 11px;
+	font-weight: 400;
+	font-family: "Josefin Sans", sans-serif;
+	color: $white;
+	margin-bottom: 40px;
+	margin-right: 30px;
+	letter-spacing: 0.2em;
+	line-height: 2em;
+}
+
+.ba-button {
+	background-color: $blue;
+	text-decoration: none;
+	color: $white;
+	padding: 20px 40px;
+	font-size: 13px;
+	font-family: "Aleo", serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in, border-color 0.3s ease-in;
+	&:hover {
+		color: $blue;
+		background-color: #fff;
+	}
+}
+.ba-img-wrap {
+	padding-left: 65px;
+}
+.ba-img--end {
+	display: flex;
+	justify-content: flex-end;
+}
+.ba-info {
+	background-color: #333333;
+	padding-top: 100px;
+	padding-bottom: 116px;
+	.ba-info-relive {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		z-index: 2;
+		padding-left: 42px;
+		padding-right: 42px;
+
+		.ba-absolut {
+			position: absolute;
+			z-index: -1;
+			top: -73px;
+			left: 142px;
+		}
+		.ba-plase {
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 50px;
+				height: 50px;
+			}
+			.ba-title-us {
+				padding-top: 0;
+				margin-top: 25px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.ba-backraund {
+	background: #333333;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.ba-book {
+	background: #fff url(../img/houses.png) no-repeat center;
+	padding-top: 220px;
+	padding-bottom: 93px;
+	background-size: cover;
+	.ba-book-wrap {
+		padding: 48px 31px;
+		background: #322d2b;
+		opacity: 0.9;
+
+		.ba-subtitle {
+			font-size: 17px;
+			font-family: "Josefin Sans", sans-serif;
+			font-weight: 400;
+			color: $white;
+			margin-bottom: 32px;
+		}
+		.ba-title-book {
+			color: $white;
+			font-size: 13px;
+			font-family: "Aleo", serif;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+	}
+}
+.ba-book-right {
+	background: #fff url(../img/see.png) no-repeat center;
+	background-size: cover;
+}
+.ba-tourist {
+	background: #fff url(../img/men.png) no-repeat center;
+	padding-top: 136px;
+	padding-bottom: 195px;
+	background-size: cover;
+}
+.ba-title-us--tourist {
+	text-align: center;
+	padding: 0;
+}
+.ba-tourist-wrap {
+	display: flex;
+	background: #322d2b;
+}
+.ba-author-wrap {
+	padding-left: 60px;
+	padding-top: 47px;
+}
+.ba-title-author {
+	color: $white;
+	font-size: 13px;
+	font-family: "Aleo", serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+footer {
+	background: #333333;
+	padding-top: 118px;
+	padding-bottom: 45px;
+
+	.ba-center {
+		text-align: center;
+		.ba-logo {
+			font-size: 20px;
+			font-family: "Josefin Sans", sans-serif;
+			font-weight: 700;
+			color: $white;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+		}
+		.ba-paragraph {
+			margin-right: 0;
+		}
+	}
+}
+.ba-social {
+	display: flex;
+	justify-content: center;
+	a {
+		display: flex;
+		text-decoration: none;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		color: #ccc;
+		line-height: 30px;
+		justify-content: center;
+		align-items: center;
+		margin: 0 3px;
+		svg {
+			fill: currentColor;
+			
+			&:hover{
+				color: $blue;
+			}
+		}
+	}
+}
